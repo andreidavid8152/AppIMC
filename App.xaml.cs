@@ -5,7 +5,7 @@ namespace AppIMC
     public partial class App : Application
     {
 
-        public static PersonaRepository PersonaRepo { get; private set; }
+        public static PersonaRepository PersonaRepo { get; set; }
 
         public App()
         {
@@ -13,7 +13,7 @@ namespace AppIMC
 
             PersonaRepo = new PersonaRepository();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new MainPage());
         }
     }
 }

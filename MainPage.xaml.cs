@@ -37,7 +37,7 @@ namespace AppIMC
             {
                 Console.WriteLine($"ID: {persona.Id}, Peso: {persona.Peso}, Altura: {persona.Altura}, IMC: {persona.IMC}");
             }
-
+            await App.PersonaRepo.EliminarPersonas();
         }
 
     }

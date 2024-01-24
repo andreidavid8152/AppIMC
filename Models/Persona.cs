@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace AppIMC.Models
 {
 
-    
+
     public class Persona
     {
 
