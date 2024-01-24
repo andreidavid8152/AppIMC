@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppIMC.MainPage"
+             Title="App IMC">
+
+    <StackLayout>
+
+        <!-- Peso -->
+        <Label Text="Peso" Margin="10,10,0,0"/>
+        <Entry x:Name="entryPeso" Placeholder="Peso (kg)" Keyboard="Numeric" />
+
+        <!-- Altura -->
+        <Label Text="Altura" Margin="10,10,0,0"/>
+        <Entry x:Name="entryAltura" Placeholder="Altura (m)" Keyboard="Numeric" />
+
+        <Button Text="Calcular" Clicked="OnCalcularClicked" WidthRequest="100" Margin="0,10,0,0"/>
+
+        <!-- Resultado -->
+        <Label Text="IMC" Margin="10,10,0,0"/>
+        <Entry  x:Name="entryIMC" Placeholder="Tu resultado aparecera aqui..." IsEnabled="False"/>
+
+
+        <Button Text="Ver datos" Clicked="OnVerDatosClicked" WidthRequest="100" Margin="0,10,0,0"/>
+
+
+    </StackLayout>
+
+</ContentPage>
